@@ -1,0 +1,16 @@
+D:\DoAnC#\DoAnC#\bin\Debug\DoAnC#.exe.config
+D:\DoAnC#\DoAnC#\bin\Debug\DoAnC#.exe
+D:\DoAnC#\DoAnC#\bin\Debug\DoAnC#.pdb
+D:\DoAnC#\DoAnC#\bin\Debug\Guna.UI2.dll
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.csproj.AssemblyReference.cache
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.Properties.Resources.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.UI.FrmDSMon.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.UI.FrmKetNoi.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.UI.FrmLogin.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.UI.FrmOrderManagement.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC_.UI.UI_UserControl.ButtonProduct.resources
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.csproj.GenerateResource.cache
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.csproj.CoreCompileInputs.cache
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.csproj.Up2Date
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.exe
+D:\DoAnC#\DoAnC#\obj\Debug\DoAnC#.pdb

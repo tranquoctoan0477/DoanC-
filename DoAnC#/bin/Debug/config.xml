@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+  <servername>TOAN\SQLEXPRESS</servername>
+  <status>false</status>
+  <username>sa</username>
+  <password>123</password>
+  <database>quan_ly_cafe</database>
+</configuration>
