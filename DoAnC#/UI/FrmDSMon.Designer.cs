@@ -30,27 +30,38 @@
         {
             this.panDSTD = new System.Windows.Forms.Panel();
             this.flPanDSTD = new System.Windows.Forms.FlowLayoutPanel();
+            this.panTimKiemDSMon = new System.Windows.Forms.Panel();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.panDSTD.SuspendLayout();
+            this.panTimKiemDSMon.SuspendLayout();
             this.SuspendLayout();
             // 
             // panDSTD
             // 
             this.panDSTD.Controls.Add(this.flPanDSTD);
-            this.panDSTD.Location = new System.Drawing.Point(3, 43);
+            this.panDSTD.Location = new System.Drawing.Point(0, 37);
             this.panDSTD.Margin = new System.Windows.Forms.Padding(0);
             this.panDSTD.Name = "panDSTD";
-            this.panDSTD.Size = new System.Drawing.Size(694, 562);
+            this.panDSTD.Size = new System.Drawing.Size(700, 615);
             this.panDSTD.TabIndex = 1;
             // 
             // flPanDSTD
             // 
             this.flPanDSTD.AutoScroll = true;
-            this.flPanDSTD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flPanDSTD.Location = new System.Drawing.Point(0, 0);
+            this.flPanDSTD.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flPanDSTD.Location = new System.Drawing.Point(0, 6);
             this.flPanDSTD.Name = "flPanDSTD";
-            this.flPanDSTD.Size = new System.Drawing.Size(694, 562);
+            this.flPanDSTD.Size = new System.Drawing.Size(700, 609);
             this.flPanDSTD.TabIndex = 0;
+            // 
+            // panTimKiemDSMon
+            // 
+            this.panTimKiemDSMon.Controls.Add(this.txtTimKiem);
+            this.panTimKiemDSMon.Location = new System.Drawing.Point(0, 0);
+            this.panTimKiemDSMon.Margin = new System.Windows.Forms.Padding(0);
+            this.panTimKiemDSMon.Name = "panTimKiemDSMon";
+            this.panTimKiemDSMon.Size = new System.Drawing.Size(700, 40);
+            this.panTimKiemDSMon.TabIndex = 2;
             // 
             // txtTimKiem
             // 
@@ -69,7 +80,7 @@
             this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem.IconRight = global::DoAnC_.Properties.Resources.timkiem;
             this.txtTimKiem.IconRightSize = new System.Drawing.Size(24, 24);
-            this.txtTimKiem.Location = new System.Drawing.Point(9, 9);
+            this.txtTimKiem.Location = new System.Drawing.Point(0, 0);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(0);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
@@ -83,23 +94,26 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(700, 608);
+            this.ClientSize = new System.Drawing.Size(700, 655);
+            this.Controls.Add(this.panTimKiemDSMon);
             this.Controls.Add(this.panDSTD);
-            this.Controls.Add(this.txtTimKiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(700, 655);
             this.Name = "FrmDSMon";
-            this.Padding = new System.Windows.Forms.Padding(3);
+            this.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.Text = "FrmGoiMon";
             this.Load += new System.EventHandler(this.FrmDSMon_Load);
+            this.Shown += new System.EventHandler(this.FrmDSMon_Shown);
             this.panDSTD.ResumeLayout(false);
+            this.panTimKiemDSMon.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2TextBox txtTimKiem;
         private System.Windows.Forms.Panel panDSTD;
         private System.Windows.Forms.FlowLayoutPanel flPanDSTD;
+        private System.Windows.Forms.Panel panTimKiemDSMon;
+        private Guna.UI2.WinForms.Guna2TextBox txtTimKiem;
     }
 }

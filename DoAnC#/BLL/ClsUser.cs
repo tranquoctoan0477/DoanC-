@@ -116,7 +116,7 @@ namespace DoAnC_.BLL
 
 
 
-        private string HashPassword(string password)
+        public string HashPassword(string password)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {

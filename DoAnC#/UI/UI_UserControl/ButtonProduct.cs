@@ -13,9 +13,25 @@ namespace DoAnC_.UI.UI_UserControl
 {
     public partial class ButtonProduct : UserControl
     {
+        // Delegate và Event để truyền dữ liệu khi ButtonProduct được click
+        public delegate void ProductClickedEventHandler(object sender, ProductEventArgs e);
+        public event ProductClickedEventHandler ProductClicked;
         public ButtonProduct()
         {
             InitializeComponent();
+            // Gắn sự kiện click cho toàn bộ ButtonProduct và các thành phần con của nó
+            this.Click += ButtonProduct_Click;
+            pictSP.Click += ButtonProduct_Click;
+            lbltenSP.Click += ButtonProduct_Click;
+            lblgiaSP.Click += ButtonProduct_Click;
+        }
+
+        // Đảm bảo đây là phần trên cùng của file, trước khi khai báo class ButtonProduct
+        public class ProductEventArgs : EventArgs
+        {
+            public string ProductName { get; set; }
+            public string ProductPrice { get; set; }
+            public Image ProductImage { get; set; }
         }
 
         public new string ProductName
@@ -51,8 +67,14 @@ namespace DoAnC_.UI.UI_UserControl
                 }
             }
         }
-
-
-
+        private void ButtonProduct_Click(object sender, EventArgs e)
+        {
+            ProductClicked?.Invoke(this, new ProductEventArgs
+            {
+                ProductName = this.ProductName,
+                ProductPrice = this.ProductPrice,
+                ProductImage = this.ProductImage
+            });
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace DoAnC_.UI
         private void btnRegister_Click(object sender, EventArgs e)
         {
             // Lấy dữ liệu từ các trường trên form
-            string username = txtemailRegister.Text.Trim();
+            string username = txtUserNameRegister.Text.Trim();
             string password = txtPassRegister.Text.Trim();
             string email = txtemailRegister.Text.Trim();
             string role = "user";  // Giá trị mặc định là 'user', có thể tùy chỉnh
@@ -56,6 +56,16 @@ namespace DoAnC_.UI
             if (string.IsNullOrWhiteSpace(username))
             {
                 ShowMessageDialog("Tên đăng nhập không được để trống.", "Thông báo", Guna.UI2.WinForms.MessageDialogIcon.Warning, Color.LightCoral);
+                return;
+            }
+
+            // Tạo đối tượng ClsUser và kiểm tra xem tên người dùng đã tồn tại chưa
+            ClsUser user = new ClsUser { Username = username };
+            if (user.IsUsernameExists())
+            {
+                ShowMessageDialog("Tên người dùng đã được sử dụng. Vui lòng chọn tên khác.", "Thông báo", Guna.UI2.WinForms.MessageDialogIcon.Warning, Color.LightCoral);
+                txtUserNameRegister.SelectAll();  // Bôi đen username
+                txtUserNameRegister.Focus();  // Đặt con trỏ vào trường username
                 return;
             }
 
@@ -72,12 +82,14 @@ namespace DoAnC_.UI
             }
 
             // Mã hóa mật khẩu trước khi gọi
-            string hashedPassword = HashPassword(password);
+            string hashedPassword = user.HashPassword(password);
 
-            // Tạo đối tượng ClsUser và gọi phương thức InsertUser
-            ClsUser newUser = new ClsUser(username, hashedPassword, email, role);
+            // Cập nhật các thuộc tính của đối tượng `user` và thêm vào cơ sở dữ liệu
+            user.Password = hashedPassword;
+            user.Email = email;
+            user.Role = role;
 
-            if (newUser.InsertUser())
+            if (user.InsertUser())
             {
                 ShowMessageDialog("Đăng ký người dùng thành công!", "Thông báo", Guna.UI2.WinForms.MessageDialogIcon.Information, Color.FromArgb(110, 237, 254));
             }

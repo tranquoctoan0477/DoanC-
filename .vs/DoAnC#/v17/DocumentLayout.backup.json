@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAnC#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|D:\\DoAnC#\\doanc#\\ui\\frmordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\frmordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|D:\\DoAnC#\\doanc#\\ui\\frmordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\frmordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|D:\\DoAnC#\\doanc#\\ui\\frmdsmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\frmdsmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|d:\\doanc#\\doanc#\\ui\\ui_usercontrol\\buttonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\ui_usercontrol\\buttonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|D:\\DoAnC#\\doanc#\\ui\\ui_usercontrol\\buttonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\ui_usercontrol\\buttonproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|d:\\doanc#\\doanc#\\ui\\frmdsmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\ui\\frmdsmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|D:\\DoAnC#\\doanc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D39D46B-10F4-49F8-95DE-004961D7063B}|DoAnC#\\DoAnC#.csproj|solutionrelative:doanc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmOrderManagement.cs",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\FrmOrderManagement.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\FrmOrderManagement.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\FrmOrderManagement.cs",
+              "RelativeToolTip": "DoAnC#\\UI\\FrmOrderManagement.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAuwHcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:23:13.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmOrderManagement.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\FrmOrderManagement.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\FrmOrderManagement.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\FrmOrderManagement.cs [Design]",
+              "RelativeToolTip": "DoAnC#\\UI\\FrmOrderManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:20:38.159Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmDSMon.cs",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\FrmDSMon.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\FrmDSMon.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\FrmDSMon.cs",
+              "RelativeToolTip": "DoAnC#\\UI\\FrmDSMon.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAqwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:57:06.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmDSMon.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\FrmDSMon.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\FrmDSMon.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\FrmDSMon.cs [Design]",
+              "RelativeToolTip": "DoAnC#\\UI\\FrmDSMon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:34:00.216Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ButtonProduct.cs",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "RelativeToolTip": "DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:21:13.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ButtonProduct.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs [Design]",
+              "RelativeToolTip": "DoAnC#\\UI\\UI_UserControl\\ButtonProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:43:12.744Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnC#\\DoAnC#\\Program.cs",
+              "RelativeDocumentMoniker": "DoAnC#\\Program.cs",
+              "ToolTip": "D:\\DoAnC#\\DoAnC#\\Program.cs",
+              "RelativeToolTip": "DoAnC#\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T04:14:42.685Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

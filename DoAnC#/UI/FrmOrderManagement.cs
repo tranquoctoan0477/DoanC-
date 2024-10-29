@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoAnC_.UI.UI_UserControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,19 +50,75 @@ namespace DoAnC_.UI
 
         private void btnGoiMon_Click(object sender, EventArgs e)
         {
-            menuTransition.Start();
-            if(GoiMon == null)
+            if (GoiMon == null || GoiMon.IsDisposed)
             {
+                // Khởi tạo FrmDSMon
                 GoiMon = new FrmDSMon();
-                GoiMon.FormClosed += GoiMon_FormColsed;
-                GoiMon.MdiParent = this;
+
+                // Đăng ký sự kiện ProductClicked từ FrmDSMon
+                GoiMon.ProductClicked += GoiMon_ProductClicked;
+
+                // Đặt các thuộc tính Dock và TopLevel để FrmDSMon lấp đầy panel
+                GoiMon.TopLevel = false;
+                GoiMon.Dock = DockStyle.Fill;
+
+                // Đặt kích thước cố định cho FrmDSMon
+                GoiMon.Width = 700;
+                GoiMon.Height = 655;
+                GoiMon.MaximumSize = new Size(700, 655);
+
+                //// Thêm FrmDSMon vào panel và hiển thị
+                panGoiFrmDSMon.Controls.Clear(); // Xóa các control cũ trong panel nếu có
+                panGoiFrmDSMon.Controls.Add(GoiMon);
                 GoiMon.Show();
             }
-            else 
+            else
             {
-                GoiMon.Activate(); 
+                GoiMon.BringToFront();
+            }
+
+            // Thiết lập chiều cao của các dòng trong DataGridView
+            DGVHTMonCuaBan.RowTemplate.Height = 100; // Đặt chiều cao của mỗi dòng thành 100
+            DGVHTMonCuaBan.Columns["Anh"].Width = 120; // Đặt chiều rộng của cột hình ảnh thành 120
+
+        }
+        private void GoiMon_ProductClicked(object sender, ButtonProduct.ProductEventArgs e)
+        {
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show($"Bạn có muốn thêm sản phẩm '{e.ProductName}' vào bàn không?", "Xác nhận thêm sản phẩm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                return; // Không thêm sản phẩm nếu người dùng chọn "No"
+            }
+
+            bool isProductExists = false;
+            foreach (DataGridViewRow row in DGVHTMonCuaBan.Rows)
+            {
+                if (row.Cells["Ten"].Value != null && row.Cells["Ten"].Value.ToString() == e.ProductName)
+                {
+                    // Nếu sản phẩm đã tồn tại, tăng số lượng và cập nhật tổng tiền
+                    int currentQuantity = Convert.ToInt32(row.Cells["SoLuong"].Value);
+                    row.Cells["SoLuong"].Value = currentQuantity + 1;
+                    row.Cells["TongTienSP"].Value = (currentQuantity + 1) * Convert.ToDecimal(e.ProductPrice.Replace(" VND", "").Replace(",", ""));
+                    isProductExists = true;
+                    break;
+                }
+            }
+
+            // Nếu sản phẩm chưa tồn tại, thêm dòng mới vào DataGridView
+            if (!isProductExists)
+            {
+                int rowIndex = DGVHTMonCuaBan.Rows.Add();
+                DataGridViewRow row = DGVHTMonCuaBan.Rows[rowIndex];
+
+                row.Cells["Anh"].Value = e.ProductImage ?? Properties.Resources.macdinh;
+                row.Cells["Ten"].Value = e.ProductName;
+                row.Cells["Gia"].Value = e.ProductPrice;
+                row.Cells["SoLuong"].Value = 1;
+                row.Cells["TongTienSP"].Value = Convert.ToDecimal(e.ProductPrice.Replace(" VND", "").Replace(",", ""));
             }
         }
+
         private void GoiMon_FormColsed(object sender, EventArgs e)
         {
             GoiMon = null;
@@ -95,5 +152,8 @@ namespace DoAnC_.UI
         {
             sidebarTransition.Start();
         }
+
+        // Phương thức xử lý sự kiện ProductClicked cho FrmDSMon
+        
     }
 }
